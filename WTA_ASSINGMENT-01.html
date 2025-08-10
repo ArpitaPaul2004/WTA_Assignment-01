@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML, CSS and Javascript</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #c3dcec;
+            color: #200707;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, main, footer {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 1.3em;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #6f42c1, #ff69b4, #ff8c00);
+            background-size: 300% 300%;
+            animation: gradientScroll 3s infinite linear;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        @keyframes gradientScroll {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 3em;
+        }
+
+        section {
+            background: #ebe4e9;
+            margin: 2em 0;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(53, 52, 52, 0.05);
+        }
+
+        section img {
+            display: block;
+            margin: 1em auto;
+            max-width: 300px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #089b5b;
+        }
+
+        ul {
+            list-style: disc-inside;
+        }
+
+        a {
+            color: #6c16ec;
+            text-decoration: none;
+            transition: color 0.2s, font-size 0.2s;
+        }
+
+        a:hover, a:focus {
+            color: #e53e3e;
+            font-size: 1.2em;
+            outline: none;
+        }
+
+        footer {
+            text-align: center;
+            color: #032a24;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        h2::after {
+            content: " \1F517";
+            color: #888;
+            font-size: 0.9em;
+            margin-left: 0.3em;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2em;
+            
+        }
+
+
+        section {
+             background: #ebe4e9;
+             padding: 1.5em;
+            border-radius: 10px;
+
+        }
+
+        #html-elements ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5em 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML, CSS and Javascript</h1>
+        <p>Basics of web development below</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="html-elements">
+            <h2 id="html-elements">HTML Elements</h2>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.OKa1McFh-rxtrga2JmcE3QAAAA?cb=thfvnext&pid=Apig" alt="HTML5 logo representing HTML elements" />
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">&lt;div&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">&lt;p&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">&lt;a&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">&lt;h1&gt;-&lt;h6&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">&lt;img&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">&lt;span&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">&lt;b&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">&lt;i&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">&lt;form&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">&lt;input&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">&lt;button&gt;</a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="css-elements">
+            <h2 id="css-elements">CSS Elements</h2>
+            <img src="https://tse4.mm.bing.net/th/id/OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa?cb=thfvnext&pid=Apig" alt="CSS3 logo representing CSS elements" />
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Selector" target="_blank">Selector</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#properties" target="_blank">Properties</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value" target="_blank">Values</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Pseudo-elements</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudo-classes</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">Flex</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">Grid</a></li>
+                
+            </ul>
+        </section>
+
+        <section aria-labelledby="js-elements">
+            <h2 id="js-elements">Javascript Elements</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo representing JS elements" />
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations" target="_blank">Variables</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Datatypes</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank">Functions</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank">Operators</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Arrays</a></li>
+            </ul>
+        </section>
+    </main>
+
+ <footer>
+    📘 Assignment 01 - Web Technology & Applications | 👩‍💻 Arpita Paul | 🆔 2330075
+</footer>
+
+</body>
+</html>
